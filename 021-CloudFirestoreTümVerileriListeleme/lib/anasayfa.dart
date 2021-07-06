@@ -8,23 +8,23 @@ class Anasayfa extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Anasayfa"),),
-      body: UserInformation(),
+      body: Yazilar(),
     );
   }
 }
 
-class UserInformation extends StatefulWidget {
+class Yazilar extends StatefulWidget {
   @override
-    _UserInformationState createState() => _UserInformationState();
+    _YazilarState createState() => _YazilarState();
 }
 
-class _UserInformationState extends State<UserInformation> {
-  final Stream<QuerySnapshot> _usersStream = FirebaseFirestore.instance.collection('Yazilar').snapshots();
+class _YazilarState extends State<Yazilar> {
+  final Stream<QuerySnapshot> yazilar = FirebaseFirestore.instance.collection('Yazilar').snapshots();
 
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
-      stream: _usersStream,
+      stream: yazilar,
       builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
         if (snapshot.hasError) {
           return Text('Something went wrong.');
