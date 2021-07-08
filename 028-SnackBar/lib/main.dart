@@ -40,7 +40,7 @@ class _IskeleState extends State<Iskele> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Drawer Menu"),
+        title: Text("SnackBar"),
       ),
       body: Container(
         child: Center(
