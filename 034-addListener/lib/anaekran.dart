@@ -21,6 +21,13 @@ class _AnaEkranState extends State<AnaEkran> {
   }
 
   @override
+  void dispose() {
+    tec1.dispose();
+    tec2.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Form(
       key: _formKey,
