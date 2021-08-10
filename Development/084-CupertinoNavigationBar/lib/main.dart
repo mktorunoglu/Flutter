@@ -9,25 +9,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
-      // Remove the debug banner
       debugShowCheckedModeBanner: false,
-      title: 'Kindacode.com',
+      title: 'CupertinoApp',
       home: MyHomePage(),
     );
   }
 }
 
-// Main Screen
 class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Widget> _tabs = [
-    HomeTab(), // see the HomeTab class below
-    SettingTab() // see the SettingsTab class below
-  ];
+  List<Widget> _tabs = [HomeTab(), SettingTab()];
 
   @override
   Widget build(BuildContext context) {
@@ -37,21 +32,21 @@ class _MyHomePageState extends State<MyHomePage> {
         middle: const Text('CupertinoNavigationBar'),
       ),
       child: CupertinoTabScaffold(
-          tabBar: CupertinoTabBar(
-            items: [
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.settings), label: 'Settings')
-            ],
-          ),
-          tabBuilder: (BuildContext context, index) {
-            return _tabs[index];
-          }),
+        tabBar: CupertinoTabBar(
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.settings), label: 'Settings')
+          ],
+        ),
+        tabBuilder: (BuildContext context, index) {
+          return _tabs[index];
+        },
+      ),
     );
   }
 }
 
-// Home Tab
 class HomeTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -81,7 +76,6 @@ class HomeTab extends StatelessWidget {
   }
 }
 
-// Settings Tab
 class SettingTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
