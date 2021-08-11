@@ -34,7 +34,6 @@ class _SharedYAxisTransitionDemoState extends State<SharedYAxisTransitionDemo>
   }
 
   final _recentList = ListView(
-    // Adding [UniqueKey] to make sure the widget rebuilds when transitioning.
     key: UniqueKey(),
     children: [
       for (int i = 0; i < 10; i++) _AlbumTile((i + 1).toString()),
@@ -42,7 +41,6 @@ class _SharedYAxisTransitionDemoState extends State<SharedYAxisTransitionDemo>
   );
 
   final _alphabeticalList = ListView(
-    // Adding [UniqueKey] to make sure the widget rebuilds when transitioning.
     key: UniqueKey(),
     children: [
       for (final letter in _alphabet) _AlbumTile(letter),
