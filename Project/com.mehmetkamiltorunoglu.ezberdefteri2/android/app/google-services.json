@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "744694896476",
+    "project_id": "ezber-defteri-flutter-17e8e",
+    "storage_bucket": "ezber-defteri-flutter-17e8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744694896476:android:e4038e4f1488d07d1b9399",
+        "android_client_info": {
+          "package_name": "com.example.ezber_defteri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744694896476-9k1nomrt23s6fb8vs5tuovi9kk57lovv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7Gy7pgnGfGNY1_qNAYg0AZEiouBFxGG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744694896476-9k1nomrt23s6fb8vs5tuovi9kk57lovv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744694896476:android:136af69baf2a057f1b9399",
+        "android_client_info": {
+          "package_name": "com.mehmetkamiltorunoglu.ezberdefteri2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744694896476-9k1nomrt23s6fb8vs5tuovi9kk57lovv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7Gy7pgnGfGNY1_qNAYg0AZEiouBFxGG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744694896476-9k1nomrt23s6fb8vs5tuovi9kk57lovv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
